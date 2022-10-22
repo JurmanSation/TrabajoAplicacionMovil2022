@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:id="@+id/Hablemoscontainer"
+    android:background="@drawable/fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/voz" />
+
+                <TextView
+                    android:id="@+id/textHablemos2"
+                    android:layout_width="327dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Crear mensaje de texto"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/edit_text"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="INGRESA EL TEXTO DE VOZ"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="150dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="50dp"
+                    android:id="@+id/editTextH"
+                    android:textSize="20sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp">
+
+                    <Button
+                        android:id="@+id/btnFavoritos"
+                        android:layout_width="79dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        app:backgroundTint="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/ic_baseline_star_24" />
+
+                    <Space
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnHablar"
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="Hablemos!" />
+                </TableRow>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>

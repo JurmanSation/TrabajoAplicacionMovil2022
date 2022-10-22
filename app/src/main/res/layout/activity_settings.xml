@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_height="677dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:srcCompat="@drawable/imgperfil" />
+
+            <TextView
+                android:id="@+id/cambiarperfil"
+                android:layout_width="381dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center_horizontal|center"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Cambiar Nombre"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="248dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Nombre"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+            </TableRow>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="369dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/edit_text"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="INGRESA UN NOMBRE"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="90dp"
+                    android:paddingRight="26dp"
+                    android:textSize="20sp" />
+
+                <TableRow
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content">
+
+                    <Space
+                        android:layout_width="14dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="248dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Voz"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="32sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp">
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="193dp"
+                        android:layout_height="61dp"
+
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:minHeight="48dp"
+                        android:text="Hombre"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="92dp"
+                        android:layout_height="53dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="Mujer"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="25sp" />
+
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/numeroconfianza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Agregar contactos de confianza:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="336dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button"
+                        android:layout_gravity="center"
+                        tools:text="Agregar" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
